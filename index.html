@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kalkulator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+</head>
+<body>
+<!--<nav class="container bg-primary">
+    <a class="text-white" href="index.html">Strona główna</a>
+    <a class="text-white" href="index.html">Też główna</a>
+</nav>-->
+
+  <div class="container-fluid">
+
+    <h1>Calculator</h1>
+    <h4>The site contains a simple calculator created using the following technologies</h4>
+    
+    <div class="row technology">
+      <div class="col-sm-3">
+        <p class="tech">HTML5</p>
+      </div>
+      <div class="col-sm-3">
+        <p class="tech">JavaScript</p>
+      </div>
+      <div class="col-sm-3">
+        <p class="tech">CSS3</p>
+      </div>
+      <div class="col-sm-3">
+        <p class="tech">Bootstrap 4</p>
+      </div>
+ 
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+     <table class="table table-bordered mytable">
+        <tbody>
+            <tr>
+                <td colspan="4"><input type="text" class="form-control result" id="result"></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-primary" id="C" onclick="erase()">C</button></td>
+                <td><button type="button" class="btn btn-primary" id="back" onclick="back()"><i class="arrow left"></i></button></td>
+                <td><button type="button" class="btn btn-primary" id="division"onclick="input('/')">/</button></td>
+                <td><button type="button" class="btn btn-primary" id="multiply" onclick="input('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-primary" id="seven" onclick="input(7)">7</button></td>
+                <td><button type="button" class="btn btn-primary" id="eight" onclick="input(8)">8</button></td>
+                <td><button type="button" class="btn btn-primary" id="nine" onclick="input(9)">9</button></td>
+                <td><button type="button" class="btn btn-primary" id="add" onclick="input('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-primary" id="four" onclick="input(4)">4</button></td>
+                <td><button type="button" class="btn btn-primary" id="five" onclick="input(5)">5</button></td>
+                <td><button type="button" class="btn btn-primary" id="six" onclick="input(6)">6</button></td>
+                <td><button type="button" class="btn btn-primary" id="minus" onclick="input('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-primary" id="one" onclick="input(1)">1</button></td>
+                <td><button type="button" class="btn btn-primary" id="two" onclick="input(2)">2</button></td>
+                <td><button type="button" class="btn btn-primary" id="three" onclick="input(3)">3</button></td>
+                <td rowspan="2"><button type="button" class="btn btn-primary btn-block" id="equal" onclick="equal()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="button" class="btn btn-primary" id="zero" onclick="input(0)">0</button></td>
+                <td><button type="button" class="btn btn-primary" id="dot" onclick="input('.')">.</button></td>
+            </tr>
+        </tbody>
+     </table>
+  </div>
+
+</body>
+</html>
