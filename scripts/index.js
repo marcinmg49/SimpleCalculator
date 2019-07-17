@@ -1,5 +1,12 @@
+
 const input = (num) => {
-  document.getElementById('result').value = document.getElementById('result').value + num; 
+  if(document.getElementById('result').value === "0"){
+    document.getElementById('result').value = "";  
+    document.getElementById('result').value = document.getElementById('result').value + num;  
+  }else{
+    document.getElementById('result').value = document.getElementById('result').value + num;
+  }
+  return result;
 }
 
 const equal = () => {
@@ -10,7 +17,7 @@ const equal = () => {
 }
 
 const erase = () => {
-  document.getElementById('result').value = "";
+  document.getElementById('result').value = "0";
 }
 
 const back = () => {
